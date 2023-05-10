@@ -92,13 +92,14 @@ textarea {
   margin: 50px 0;
 }
 
-   /* ------- Base header | Footer styles ---------*/
+/* ------- Base header | Footer styles ---------*/
 
 header {
   padding: 15px 0;
-}   
+}
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,9 +117,11 @@ header .content-wrapper {
 figure {
   margin: 0;
   padding: 15px 0 10px 0;
-}  /*  IDK  if i need this */
+}
 
-.header-divider{ 
+/*  IDK  if i need this */
+
+.header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -139,8 +142,10 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0; 
-}  /** ? do i need this ? **/
+  margin: 0;
+}
+
+/** ? do i need this ? **/
 
 footer {
   flex-direction: column;
@@ -156,7 +161,7 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -263,7 +268,8 @@ aside .content-wrapper {
 }
 
 .fontawesome-icon {
-  padding: 30px 0 40px 0; /** ?? **/
+  padding: 30px 0 40px 0;
+  /** ?? **/
 }
 
 .features p {
@@ -287,7 +293,8 @@ aside .content-wrapper {
   margin-bottom: 40px;
 }
 
-.lacrue h3{ /* MIGHT NOT NEED THIS ONE IDK */
+.lacrue h3 {
+  /* MIGHT NOT NEED THIS ONE IDK */
   padding: 20px 0 20px 0;
 }
 
@@ -435,24 +442,172 @@ aside .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* general styles */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+
+  header { 
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/***** Hero Area *****/
+
+/* Aside */
+
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 42%;
+  margin: 0;
+}
+
+/* Features */
+
+.features .content-wrapper{
+  margin: 100px 0;
+}
+/* 
+.features-items h2{
+  margin-bottom: 20px;
+}  who knows if this is right */
+
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap; /* I GIVE UP */
+  flex-basis: 50%;
+}
+
+.features .features-item-description {
+  width: 50%;
+}
+
+/* Reviews */
+
+.reviews article {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.reviews article div {
+  width: 49%;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+  width: 65%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+
+
+/* =========================================================================
+About page
+============================================================================ */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* =========================================================================
+FAQ page
+============================================================================ */
+
+.faq .content-wrapper {
+  
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+/* ========================================================================
+Desktop 
+=========================================================================== */
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles here */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -520,4 +675,3 @@ aside .content-wrapper {
     page-break-after: avoid;
   }
 }
-
