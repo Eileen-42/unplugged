@@ -87,10 +87,85 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+/*
+nav {
+  font-size: 1.875em;
+  font-weight: bold;
+}
+*/
+
+ul,
+li   {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+/*
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+}
+*/
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  /* font-weight: 500; */
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+input .text {
+  /* do this later for buttons */
+}
+
+img {}
+
+figure {}
+
+address, p {
+  font-style: normal;
+}
+
+.content-wrapper {}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
+/*
+.reviews h2, .faq h2 {
+  line-height: 30px;
+}
+*/
 
 /* ------- Base header | Footer styles ---------*/
 
@@ -162,7 +237,7 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
-} 
+}
 
 footer .social-icons {
   display: flex;
@@ -179,7 +254,8 @@ footer .social-icons p {
 footer .copyright {
   padding: 20px 0;
   display: flex;
-  justify-content: center; /* FIXED THIS */
+  justify-content: center;
+  /* FIXED THIS */
 }
 
 /******** ----- MOBILE STYLES - homepage ------ ********/
@@ -355,6 +431,10 @@ aside .content-wrapper {
   margin-bottom: 50px;
 }
 
+.faq-content h4 {
+  line-height: 1.5em;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -476,7 +556,19 @@ aside .content-wrapper {
     display: none;
   }
 
-
+  h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+  
 
   /***** Hero Area *****/
 
@@ -510,7 +602,7 @@ aside .content-wrapper {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 50%; /* 62%? */
   }
 
   /* Reviews */
@@ -544,7 +636,16 @@ aside .content-wrapper {
   footer .copyright {
     width: 100%;
   }
-
+  footer, .contact h4 {
+    font-size: 1.5em;
+  }
+  footer p {
+    line-height: 18px;
+  }
+  .faq h4, p {
+    font-size: 0.825em;
+    line-height: 15.75px;
+  }
 
 
   /* =========================================================================
@@ -604,6 +705,8 @@ Desktop
   /* Hero */
   .hero-area h1 {
     width: 60%;
+    font-size: 3.75em;
+    line-height: 60px; /* might need to change this later */
   }
 
   /* Aside */
@@ -613,12 +716,16 @@ Desktop
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%; 
+    width: 30%;
+  }
+  h3, h4 {
+    font-size: 1.875em;
   }
 
   /* Features */
   .features h2 {
-    width: 90%
+    width: 90%;
+    font-size: 2.25em;
   }
 
   .features article {
@@ -628,7 +735,8 @@ Desktop
   /* Reviews */
   .reviews article div {
     width: 40%;
-    padding-top: 50px; /* ?? */
+    padding-top: 50px;
+    /* ?? */
   }
 
   /* ==========================================================================
@@ -637,6 +745,7 @@ Desktop
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
   /* ==========================================================================
@@ -644,6 +753,15 @@ Desktop
    ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+  .faq h4, p {
+    font-size: 1.125em;
+    line-height: 18px;
+  }
+  p { 
+    font-size: 1.125em;
+    line-height: 24px;
   }
 
 }
