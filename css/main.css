@@ -232,7 +232,7 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 50px 0 10px 0;
 }
 
 footer .contact {
@@ -244,6 +244,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 footer .social-icons p {
@@ -262,6 +263,7 @@ footer .social-icons p i {
 
 footer .copyright {
   margin: 20px 0;
+  padding-top: 50px;
 }
 
 /******** ----- MOBILE STYLES - homepage ------ ********/
@@ -572,6 +574,10 @@ aside .content-wrapper {
     margin: 100px 0;
   }
 
+  .content-wrapper nav {
+    width: 170px;
+  }
+
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
@@ -684,7 +690,7 @@ aside .content-wrapper {
 
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 100px 0 10px 0;
   }
 
   footer .footer-content {
@@ -698,7 +704,7 @@ aside .content-wrapper {
     margin-bottom: 0;
   }
 
-  footer h4 {
+  footer h3 {
     font-size: 1.5em;
     margin-bottom: 40px;
   }
@@ -714,6 +720,7 @@ aside .content-wrapper {
 
   footer .copyright {
     width: 100%;
+    padding-top: 100px;
   }
 
 
@@ -843,7 +850,7 @@ Desktop
     padding-bottom: 50px;
   }
 
-  footer h4 {
+  footer h3 {
     font-size: 1.875em;
   }
 
