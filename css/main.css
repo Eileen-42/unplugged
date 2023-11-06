@@ -195,8 +195,6 @@ header figure {
   height: 1px;
   margin: 10px 0 20px 0;
   border-bottom: 1px solid #3a3a3a;
-  /* move border bottom?  replace with: background: #3a3a3a;
-   */
 }
 
 header nav {
@@ -324,14 +322,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-
-/* --- do i need this??
-aside .content-wrapper { 
-  padding: 50px 0 50px 0;
-  background-color: 
-}
-
-
 /* ---- features  ----- */
 
 .features {
@@ -364,23 +354,10 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-/**
-.fontawesome-icon {
-  text-align: center;
-  padding: 30px 0 40px 0;
-}
-**/
-
 .features p {
   text-align: center;
   margin: 0;
 }
-
-/* might not need this 
-.features-item-description {
-  text-align: center;
-  /** padding-bottom: 30px;  ?? **/
-
 
 /* ----- reviews ----- */
 
